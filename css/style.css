@@ -113,7 +113,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #f5efef;
     transition: 0.4s;
   }
   .burger-menu_button:hover .burger-menu_lines {
@@ -203,6 +203,11 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .swiper {
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 800px;
+  }
   .burger-menu_nav {
     visibility: hidden;
   }
@@ -213,6 +218,7 @@ body {
 }
 
 .header {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,8 +255,11 @@ body {
   color: #33343F;
 }
 .header__nav .nav__list li a:hover {
-  color: red;
+  color: orange;
   text-decoration: underline;
+}
+.header__nav .nav__list li a:focus {
+  color: red;
 }
 
 .main {
@@ -277,12 +286,6 @@ h2 {
   font-size: 18px;
   font-family: Inter;
   line-height: 33.4px;
-}
-
-.swiper {
-  background-color: #F7F7F7;
-  width: 100%;
-  height: 800px;
 }
 
 .swiper-slide {
